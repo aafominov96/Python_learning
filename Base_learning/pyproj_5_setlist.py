@@ -1,0 +1,52 @@
+a = set()
+print('Type: ', type(a))
+print(a)
+b = {"Name": 23}
+c = {"Name", 23}
+print('Type: ', type(b))
+print(b)
+print('Type: ', type(c))
+print(c)
+d = frozenset("Qwerty")
+a.add('cold')
+print("a.add", a)
+print("cold" in a)
+test1 = {1, 14, 14, 15, 1325, 124, 123, 142, 123, 2, 5, 6, 1, 2}
+test2 = {1, 43, 543, 124, 12, 54, 124, 2, 6, 1}
+print("Test1: ", test1)
+print("Test2: ", test2)
+test_buf = test1.copy()
+test_buf.update(test2)
+print("Update: ", test_buf)
+test_buf.clear()
+test_buf = test1.copy()
+test_buf.intersection_update(test2)
+print("Intersection: ", test_buf)
+test_buf.clear()
+test_buf = test1.copy()
+test_buf.difference_update(test2)
+print("Difference: ", test_buf)
+test_buf.clear()
+test_buf = test1.copy()
+test_buf.symmetric_difference_update(test2)
+print("Symmetric difference: ", test_buf)
+test_buf.discard(5)
+print("Discard: ", test_buf)
+l = len(test_buf)
+test_buf.clear()
+test_buf = test1.copy()
+if test_buf == test1:
+    print("Good copy")
+else:
+    del(test_buf)
+test_buf.pop()
+print("Test1: ", test1)
+print("Test_buf: ", test_buf)
+if 1 in test1:
+    print("test_buf really in test1")
+else:
+    del(test_buf)
+fin = set(a for a in range(0, 100, 1))
+print("FINALTEST: ", fin)
+a = [ a for a in range(1,100,1)]
+print(a)

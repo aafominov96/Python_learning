@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<data>
+    <person group="1">
+        <first_name>Artyom</first_name>
+        <second_name>Fominov</second_name>
+        <age>22</age>
+        <sex>M</sex>
+    </person>
+    <person group="2">
+        <first_name>Sergey</first_name>
+        <second_name>Novikov</second_name>
+        <age>23</age>
+        <sex>M</sex>
+    </person>
+    <person group="3">
+        <first_name>Leonid</first_name>
+        <second_name>Scherbinin</second_name>
+        <age>22</age>
+        <sex>M</sex>
+    </person>
+    <badboy>
+        <first_name>Denis</first_name>
+        <second_name>Zakharov</second_name>
+        <age>22</age>
+        <sex>M</sex>
+    </badboy>
+</data>
